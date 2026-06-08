@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Healthy Bite</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>Healthy Bite</h1>
+    <p>Healthy Food Menu</p>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="ابحث عن وجبة..."
+    >
+</header>
+
+<section class="category">
+
+<h2>🍗 وجبات الدجاج</h2>
+
+<div class="cards">
+
+<div class="card" onclick="openMeal('creamChicken')">
+<img src="images/cream-chicken.jpeg">
+<h3>دجاج بالكريما</h3>
+</div>
+
+<div class="card" onclick="openMeal('mushroomChicken')">
+<img src="images/mushroom-chicken.jpeg">
+<h3>دجاج بكريمة الفطر</h3>
+</div>
+
+<div class="card" onclick="openMeal('chineseChicken')">
+<img src="images/chinese-chicken.jpeg">
+<h3>دجاج صيني</h3>
+</div>
+
+<div class="card" onclick="openMeal('pizzaChicken')">
+<img src="images/pizza-chicken.jpeg">
+<h3>دجاج بصوص البيتزا</h3>
+</div>
+
+<div class="card" onclick="openMeal('bbqChicken')">
+<img src="images/bbq-chicken.jpeg">
+<h3>دجاج باربكيو</h3>
+</div>
+
+<div class="card" onclick="openMeal('fajita')">
+<img src="images/fajita.jpeg">
+<h3>وجبة فاهيتا</h3>
+</div>
+
+</div>
+</section>
+
+<section class="category">
+
+<h2>🥗 السلطات</h2>
+
+<div class="cards">
+
+<div class="card" onclick="openMeal('oriental')">
+<img src="images/oriental.jpeg">
+<h3>سلطة شرقية</h3>
+</div>
+
+<div class="card" onclick="openMeal('caesar')">
+<img src="images/caesar.jpeg">
+<h3>سلطة سيزر</h3>
+</div>
+
+<div class="card" onclick="openMeal('arugula')">
+<img src="images/arugula.jpeg">
+<h3>سلطة جرجير</h3>
+</div>
+
+<div class="card" onclick="openMeal('pastaSalad')">
+<img src="images/pasta-salad.jpeg">
+<h3>سلطة معكرونة</h3>
+</div>
+
+</div>
+</section>
+
+<section class="category">
+
+<h2>🍞 الفطور</h2>
+
+<div class="cards">
+
+<div class="card" onclick="openMeal('eggToast')">
+<img src="images/egg-toast.jpeg">
+<h3>توست البيض</h3>
+</div>
+
+<div class="card" onclick="openMeal('zaatarToast')">
+<img src="images/zaatar-toast.jpeg">
+<h3>توست اللبنة والزعتر</h3>
+</div>
+
+<div class="card" onclick="openMeal('peanutToast')">
+<img src="images/peanut-toast.jpeg">
+<h3>توست زبدة الفستق</h3>
+</div>
+
+<div class="card" onclick="openMeal('oats')">
+<img src="images/oats.jpeg">
+<h3>شوفان مع الحليب</h3>
+</div>
+
+</div>
+</section>
+
+<section class="category">
+
+<h2>🥤 المشروبات</h2>
+
+<div class="cards">
+
+<div class="card" onclick="openMeal('proteinShake')">
+<img src="images/protein-shake.jpeg">
+<h3>شيك بروتين</h3>
+</div>
+
+</div>
+
+</section>
+
+<div id="mealModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeMeal()">&times;</span>
+
+<h2 id="mealTitle"></h2>
+
+<p id="mealDescription"></p>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
